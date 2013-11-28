@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "nl.ordina.ordinacrush"
+        versionCode="10" 
+        version   = "1.0.1">
+    <!-- versionCode is optional and Android only -->
+
+    <name>Scorpion 2Step Authenticatie</name>
+
+    <description>
+        Deze app is een hybride uitvoering van de webapplicatie om een code te verkrijgen voor 2step authenticatie in Joomla 3.2 en hoger.
+    </description>
+
+    <author href="http://ScorpionComputers.nl" email="Edwin@ScorpionComputers.nl">
+        Scorpion Computers &amp; Software 
+    </author>
+	
+    <access origin="*"/>
+
+	<gap:platform name="ios" />
+	<gap:platform name="android" />
+	<!--<gap:platform name="webos" />-->
+	<!--<gap:platform name="symbian" />-->
+	<!--<gap:platform name="blackberry" />-->
+	<!--<gap:platform name="winphone" />-->
+
+	
+    <!-- multi platform settings -->
+    <preference name="phonegap-version" value="3.1.0" />
+    <!--<preference name="orientation" value="portrait" />-->
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="true" />
+    <!-- iOS Specific settings -->
+    <preference name="webviewbounce" value="false" />
+    <preference name="prerendered-icon" value="false" />
+    <preference name="stay-in-webview" value="true" />
+    <preference name="ios-statusbarstyle" value="black-opaque" />
+    <preference name="detect-data-types" value="false" />
+    <preference name="exit-on-suspend" value="true" />
+    <preference name="show-splash-screen-spinner" value="true" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <!-- BlackBerry Specific settings -->
+    <preference name="disable-cursor" value="true" />
+    <!-- Android Specific settings -->
+    <preference name="android-minSdkVersion" value="10" />
+    <!--<preference name="android-maxSdkVersion" value="17" />-->
+    <preference name="android-installLocation" value="auto" />
+    <preference name="splash-screen-duration" value="3000" />
+    <preference name="load-url-timeout" value="20000" />
+	
+    <!-- Define app icon for each platform. -->
+    <icon src="icon.png" />
+    <icon src="images/icons/iOS/57.png" 		gap:platform="ios" 		width="57" height="57" /> 
+    <icon src="images/icons/iOS/72.png" 		gap:platform="ios" 		width="72" height="72" /> 
+    <icon src="images/icons/iOS/114.png" 		gap:platform="ios" 		width="114" height="114" /> 
+    <icon src="images/icons/iOS/144.png" 		gap:platform="ios" 		width="144" height="144" /> 
+    <icon src="images/icons/android/ldpi.png" 		gap:platform="android" 		gap:density="ldpi" /> 
+    <icon src="images/icons/android/mdpi.png" 		gap:platform="android" 		gap:density="mdpi" /> 
+    <icon src="images/icons/android/hdpi.png" 		gap:platform="android" 		gap:density="hdpi" /> 
+    <icon src="images/icons/android/xhdpi.png" 		gap:platform="android" 		gap:density="xhdpi" /> 
+
+    <!-- Define app splash screen for each platform. -->
+    <gap:splash src="splash.png" />
+    <!-- <gap:splash src="images/splash/ios/320x480.png"         gap:platform="ios"	width="320" height="480" />-->
+    <!-- <gap:splash src="images/splash/ios/640x960.png"         gap:platform="ios"	width="640" height="960" />-->
+    <!-- iPhone 5 and Retina support is necesary for the new appstore rules from Apple -->
+    <!-- <gap:splash src="images/splash/ios/640x1136.png"        gap:platform="ios" 	width="640" height="1136" />-->
+    <!-- <gap:splash src="images/splash/ios/768x1024.png"        gap:platform="ios"	width="768" height="1024" />-->
+    <!-- <gap:splash src="images/splash/ios/1024x768.png"        gap:platform="ios"	width="1024" height="768" />-->
+    <!-- retina iPad support: PhoneGap 2.5.0+ only -->
+    <!-- <gap:splash src="images/splash/ios/2048x1496.png" 		gap:platform="ios"	width="2048" height="1496" />-->
+    <!-- <gap:splash src="images/splash/ios/1496x2048.png" 		gap:platform="ios"	width="1496" height="2048" />-->
+	
+    <!-- <gap:splash src="images/splash/android/ldpi200x320.png"  	gap:platform="android"  gap:density="ldpi" />-->
+    <!-- <gap:splash src="images/splash/android/mdpi320x480.png"  	gap:platform="android"  gap:density="mdpi" />-->
+    <!-- <gap:splash src="images/splash/android/hdpi480x800.png"  	gap:platform="android"  gap:density="hdpi" />-->
+    <!-- <gap:splash src="images/splash/android/xhdpi720x1280.png"	gap:platform="android"  gap:density="xhdpi" />-->
+		
+    <!-- If you do not want any permissions to be added to your app, add the
+    following tag to your config.xml; you will still have the INTERNET
+    permission on your app, which PhoneGap requires. -->
+    <preference name="permissions" value="none"/>
+    <!-- to enable individual permissions use the following examples -->
+    <!--<feature name="http://api.phonegap.com/1.0/battery"/> -->
+    <!--<feature name="http://api.phonegap.com/1.0/camera"/> -->
+    <!--<feature name="http://api.phonegap.com/1.0/contacts"/> -->
+    <!--<feature name="http://api.phonegap.com/1.0/file"/>-->
+    <!--<feature name="http://api.phonegap.com/1.0/geolocation"/> -->
+    <!--<feature name="http://api.phonegap.com/1.0/media"/> -->
+    <!--<feature name="http://api.phonegap.com/1.0/network"/>-->
+    <!--<feature name="http://api.phonegap.com/1.0/notification"/> -->
+    <!--<feature name="http://api.phonegap.com/1.0/device"/>-->
+</widget>
